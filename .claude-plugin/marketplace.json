@@ -1,0 +1,18 @@
+{
+  "name": "agent-plugins-official",
+  "owner": {
+    "name": "gaiia"
+  },
+  "metadata": {
+    "description": "A curated collection of AI Agent plugins for the gaiia platform."
+  },
+  "plugins": [
+    {
+      "name": "gaiia-api",
+      "source": "./plugins/gaiia-api",
+      "description": "Explore and query the gaiia GraphQL API. Schema exploration, query construction, and API execution.",
+      "category": "api",
+      "tags": ["graphql", "api", "telecom", "oss-bss"]
+    }
+  ]
+}

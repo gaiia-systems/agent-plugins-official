@@ -1,0 +1,10 @@
+{
+  "name": "gaiia-api",
+  "description": "Explore and query the gaiia GraphQL API. Schema exploration, query construction, and API execution.",
+  "version": "1.0.0",
+  "author": {
+    "name": "gaiia"
+  },
+  "license": "MIT",
+  "keywords": ["graphql", "api", "telecom", "oss-bss", "gaiia"]
+}
