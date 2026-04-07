@@ -1,6 +1,6 @@
-# claude-plugins
+# gaiia-systems/agent-plugins-official
 
-A plugin marketplace for [Claude Code](https://claude.com/claude-code).
+A [Claude Code](https://claude.com/claude-code) plugin marketplace for interacting with the [gaiia](https://gaiia.com/) platform.
 
 ## Available Plugins
 
