@@ -2,7 +2,7 @@
 
 ## API Key
 
-All requests require an `X-Gaiia-Api-Key` header. The scripts read the key from the `GAIIA_API_KEY` environment variable.
+Queries and mutations require an `X-Gaiia-Api-Key` header. Schema introspection works without a key, so you can explore the schema and craft queries before setting one up. The scripts read the key from the `GAIIA_API_KEY` environment variable.
 
 ### Option A: .env file (recommended for project-local use)
 

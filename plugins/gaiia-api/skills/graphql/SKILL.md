@@ -11,7 +11,7 @@ GraphQL API at `https://api.gaiia.com/api/v1`. Root query type: `Query`. Root mu
 
 Load these as needed:
 
-- **[references/setup.md](references/setup.md)** — API key configuration. Load when the user hasn't set up their key or hits auth errors.
+- **[references/setup.md](references/setup.md)** — API key configuration. Load when the user needs to execute queries/mutations and hasn't set up their key, or hits auth errors. Schema introspection works without a key.
 - **[references/pagination.md](references/pagination.md)** — Relay cursor pagination, `Connection`/`PageInfo` types, iterating all pages. Load when building any query that returns a list.
 - **[references/errors.md](references/errors.md)** — Mutation errors live in `data.*.errors[]`, not top-level `errors`. Load when handling mutation responses or debugging errors.
 - **[references/rate-limits.md](references/rate-limits.md)** — Leaky bucket, 500 point cap, response headers, `RATE_LIMITED` error. Load when making batch requests or debugging rate limit errors.
@@ -154,4 +154,4 @@ curl -s \
 - **Never guess field or type names.** Always verify with `describe_type.sh` first.
 - **Show intermediate results to the user** at Step 2 so they can steer the exploration.
 - **Use the cached schema** — avoid re-fetching on every step.
-- **Load API key from env** — never hardcode it. See [references/setup.md](references/setup.md).
+- **Load API key from env** — never hardcode it. The key is required for queries and mutations but not for schema introspection. See [references/setup.md](references/setup.md).
